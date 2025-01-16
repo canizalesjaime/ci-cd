@@ -3,21 +3,25 @@ const bodyParser = require("body-parser");
 const { Pool } = require("pg");
 const fs = require("fs");
 const axios = require("axios");
+const cors = require("cors");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 4000;
+
 
 // Middleware
 app.use(bodyParser.json());
 
 // PostgreSQL configuration
 const pool = new Pool({
-  user: "scheduler_user",
+  user: "postgres",
   host: "localhost",
-  database: "scheduler",
-  password: "password",
+  database: "postgres",
+  password: "hello1234",
   port: 5432,
 });
+
+app.use(cors());
 
 // Helper function to execute queries
 const query = async (text, params) => {

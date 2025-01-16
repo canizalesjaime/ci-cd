@@ -5,13 +5,7 @@
 
 
 # Plan
+* Run project
 * Start github action
 * include docker and git 
-
-
-# Slide Structure
-* explain what is ci/cd
-* explain benefits of ci/cd
-* do example(scheduler)
-* state alternatives(jenkins)
 

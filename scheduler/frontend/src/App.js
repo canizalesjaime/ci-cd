@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
+
+const API_URL = "http://localhost:4000";
+
+//console.log(`${API_URL}/api/schedule`)
+
 function App() {
   const [schedule, setSchedule] = useState([]);
   const [todos, setTodos] = useState([]);
@@ -14,22 +19,22 @@ function App() {
   }, []);
 
   const fetchSchedule = async () => {
-    const response = await axios.get("http://localhost:3000/api/schedule");
+    const response = await axios.get(`${API_URL}/api/schedule`);
     setSchedule(response.data);
   };
 
   const fetchTodos = async () => {
-    const response = await axios.get("http://localhost:3000/api/todos");
+    const response = await axios.get(`${API_URL}/api/todos`);
     setTodos(response.data);
   };
 
   const addEvent = async () => {
-    await axios.post("http://localhost:3000/api/schedule", { event: newEvent });
+    await axios.post(`${API_URL}/api/schedule`, { event: newEvent });
     fetchSchedule();
   };
 
   const addTask = async () => {
-    await axios.post("http://localhost:3000/api/todos", {
+    await axios.post(`${API_URL}/api/todos`, {
       task: newTask,
       dueDate: newDueDate,
     });
@@ -37,7 +42,7 @@ function App() {
   };
 
   const deleteTask = async (task) => {
-    await axios.delete(`http://localhost:3000/api/todos/${task}`);
+    await axios.delete(`${API_URL}/api/todos/${task}`);
     fetchTodos();
   };
 
