@@ -1,8 +1,8 @@
 {
   "name": "weekly-scheduler",
   "version": "1.0.0",
-  "description": "Node.js project for weekly schedule and to-do list with Express and PostgreSQL",
-  "main": "server.js",
+  "description": "Node.js project for weekly schedule and to-do list with Express and PostgreSQL frontend",
+  "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -11,10 +11,6 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "pg": "^8.5.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-scripts": "^5.0.1"

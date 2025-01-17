@@ -1,8 +1,8 @@
 # Example for scheduler project
 Setting up **GitHub Actions** automates workflows like building, testing, and deploying your project. Below is a step-by-step guide to configure **GitHub Actions** for your Node.js project with PostgreSQL.
 
-## 🚀 Step-by-Step Setup
-1️⃣ Create ```.github/workflows``` Directory
+# 🚀 Step-by-Step Setup
+## 1️⃣ Create ```.github/workflows``` Directory
 In your project root, create the directory:
 
 ```bash

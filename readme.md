@@ -3,6 +3,7 @@
 * react docker: npm create vite@latest my-react-app --template react
 * sde 2 has CI
 * Plan: Start github action(include dockerfile,git?)
+* github action extension?
 
 
 # Steps to run project commands
@@ -24,11 +25,11 @@
   due_date DATE
 );
 ```
-6. ```cd scheduler```
+6. ```\q```
 7. ```npm install```
 8. ```npm run dev```
 9. open new terminal
-10. ```cd /workspace/scheduler/frontend```
+10. ```cd frontend```
 11. ```npm install```
 12. ```npm start```
 13. open a web browser and go to http://localhost:3000
