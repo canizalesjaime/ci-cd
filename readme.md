@@ -8,29 +8,12 @@
 
 # Steps to run project commands
 1. ```pg_ctlcluster 16 main start```
-2. ```sudo -u postgres psql```
-3. ```ALTER USER postgres PASSWORD 'hello1234';```
-```sql
-4. CREATE TABLE schedule (
-  id SERIAL PRIMARY KEY,
-  day VARCHAR(50),
-  time VARCHAR(50),
-  event TEXT
-); 
-```
-```sql
-5. CREATE TABLE todos (
-  id SERIAL PRIMARY KEY,
-  task TEXT NOT NULL,
-  due_date DATE
-);
-```
-6. ```\q```
+2. ```node migrate.js```
+3. ```npm install```
+4. ```npm run dev```
+5. open new terminal
+6. ```cd frontend```
 7. ```npm install```
-8. ```npm run dev```
-9. open new terminal
-10. ```cd frontend```
-11. ```npm install```
-12. ```npm start```
-13. open a web browser and go to http://localhost:3000
+8. ```npm start```
+9. open a web browser and go to http://localhost:3000
 

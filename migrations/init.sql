@@ -1,5 +1,5 @@
 -- CREATE DATABASE scheduler;
--- run this script: psql -U scheduler_user -d scheduler -f schema.sql
+-- run this script: psql -U scheduler_user -d scheduler -f init.sql
 
 
 CREATE TABLE schedule (
@@ -16,9 +16,9 @@ CREATE TABLE todos (
 );
 
 -- ## psql commands in docker
--- * pg_lsclusters #shows the clusters you got
--- * pg_ctlcluster 16 main start #start a down cluster
--- * sudo -u postgres psql #cli for psql 
--- * ALTER USER postgres PASSWORD 'hello1234';
--- * psql -U myuser -d mydb -h localhost -p 5432
--- * locale -a #check locals
+-- pg_lsclusters #shows the clusters you got
+-- pg_ctlcluster 16 main start #start a down cluster
+-- sudo -u postgres psql #cli for psql 
+-- ALTER USER postgres PASSWORD 'hello1234';
+-- psql -U myuser -d mydb -h localhost -p 5432
+-- locale -a #check locals
