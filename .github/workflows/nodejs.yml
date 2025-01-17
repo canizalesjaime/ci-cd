@@ -47,6 +47,7 @@ jobs:
 
     - name: Run DB migrations (if any)
       run: |
+        service postgresql start
         sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'hello1234';"
         npm run migrate  # Adjust this to your migration script if needed
 
