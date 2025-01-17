@@ -45,9 +45,9 @@ jobs:
           sleep 2
         done
 
-    # - name: Run DB migrations (if any)
-    #   run: |
-    #     npm run migrate  # Adjust this to your migration script if needed
+    - name: Run DB migrations (if any)
+      run: |
+        npm run migrate  # Adjust this to your migration script if needed
 
     # - name: Run tests
     #   env:
