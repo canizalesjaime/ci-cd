@@ -43,7 +43,11 @@ app.get("/api/schedule", async (req, res) => {
 
 // Add an event to the weekly schedule
 app.post("/api/schedule", async (req, res) => {
-  const { day, time, event } = req.body;
+  let event  = req.body.event;
+  event=event.trim();
+  let arr=event.split(",");
+  event=arr[2];
+  let day = arr[0], time=arr[1];
   if (!day || !time || !event) {
     return res.status(400).json({ error: "Day, time, and event are required" });
   }

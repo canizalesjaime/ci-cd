@@ -53,7 +53,7 @@ function App() {
         type="text"
         value={newEvent}
         onChange={(e) => setNewEvent(e.target.value)}
-        placeholder="Add new event"
+        placeholder="<day>, <time>, <event>"
       />
       <button onClick={addEvent}>Add Event</button>
       <ul>
