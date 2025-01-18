@@ -1,0 +1,9 @@
+{
+    "name": "ci-cd-workshop",
+    
+    "build" : {
+        "dockerfile": "../Dockerfile"
+    },
+      
+    "runArgs":["--net=host"]
+}

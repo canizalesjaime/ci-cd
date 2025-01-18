@@ -1,17 +1,18 @@
 FROM jaimec21/node-psql:latest
 
-CMD service postgresql start
-
 WORKDIR /workspace
 
 COPY . .
 
 RUN npm install 
 
-WORKDIR /frontend
+WORKDIR frontend
 
 RUN npm install 
 
+EXPOSE 3000 4000 5432
+
+CMD service postgresql start
 # FROM ubuntu:latest
 
 # SHELL [ "/bin/bash" , "-c" ]
@@ -39,5 +40,3 @@ RUN npm install
 
 # RUN service postgresql start && \
 #     sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'hello1234';"
-
-#EXPOSE 5432

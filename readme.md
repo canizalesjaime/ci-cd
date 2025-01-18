@@ -6,14 +6,26 @@
 * github action extension?
 
 
-# Steps to run project commands
-1. ```pg_ctlcluster 16 main start```
-2. ```node migrate.js```
-3. ```npm install```
+# Steps to run project in devcontainers commands
+1. cd ```\workspace```
+2. ```pg_ctlcluster 16 main start```
+3. ```node migrate.js```
 4. ```npm run dev```
 5. open new terminal
-6. ```cd frontend```
-7. ```npm install```
-8. ```npm start```
-9. open a web browser and go to http://localhost:3000
+6. ```cd \workspace\frontend```
+6. ```npm start```
+7. open a web browser and go to http://localhost:3000
 
+
+# Steps to run project in terminal commands
+1. ```docker build -t my-app .```
+2. ```docker run -p 3000:3000 -p 4000:4000 -p 5432:5432 --name test_container -it --rm my-app``` 
+3. ```pg_ctlcluster 16 main start```
+4. ```cd ..```
+5. ```node migrate.js```
+6. ```npm run dev```
+7. open new terminal
+8. ```docker ps -a``` to get container-id
+9.  ```docker exec -it container-id bash```
+10. ```npm start```
+11. open a web browser and go to http://localhost:3000
