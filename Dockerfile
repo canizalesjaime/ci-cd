@@ -2,6 +2,8 @@ FROM jaimec21/node-psql:latest
 
 CMD service postgresql start
 
+RUN npm install 
+
 # WORKDIR /workspace
 
 # COPY . .
