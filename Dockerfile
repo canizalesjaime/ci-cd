@@ -2,8 +2,15 @@ FROM jaimec21/node-psql:latest
 
 CMD service postgresql start
 
-COPY . .
+# WORKDIR /workspace
 
+# COPY . .
+
+# RUN npm install 
+
+# WORKDIR /frontend
+
+# RUN npm install 
 # FROM ubuntu:latest
 
 # SHELL [ "/bin/bash" , "-c" ]
