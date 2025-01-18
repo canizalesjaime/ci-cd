@@ -10,6 +10,8 @@ WORKDIR frontend
 
 RUN npm install 
 
+WORKDIR /workspace
+
 EXPOSE 3000 4000 5432
 
 CMD service postgresql start
