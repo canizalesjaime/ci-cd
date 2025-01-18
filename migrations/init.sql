@@ -22,3 +22,5 @@ CREATE TABLE todos (
 -- ALTER USER postgres PASSWORD 'hello1234';
 -- psql -U myuser -d mydb -h localhost -p 5432
 -- locale -a #check locals
+
+-- psql -U postgres -c "ALTER USER postgres PASSWORD '${POSTGRES_PASSWORD}';"
