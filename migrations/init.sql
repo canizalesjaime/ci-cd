@@ -24,3 +24,6 @@ CREATE TABLE todos (
 -- locale -a #check locals
 
 -- psql -U postgres -c "ALTER USER postgres PASSWORD '${POSTGRES_PASSWORD}';"
+-- - name: Build Docker image
+--   run: docker build -t my-app .
+

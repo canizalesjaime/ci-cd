@@ -44,7 +44,7 @@ jobs:
           echo "Waiting for PostgreSQL to be ready..."
           sleep 2
         done
-        service postgresql start
+        pg_ctlcluster 16 main start
         psql -U postgres -c "ALTER USER postgres PASSWORD 'hello1234';"
 
     - name: Run DB migrations (if any)
