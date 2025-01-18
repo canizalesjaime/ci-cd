@@ -1,7 +1,8 @@
 FROM jaimec21/node-psql:latest
 
 CMD service postgresql start
-#EXPOSE 5432
+
+COPY . .
 
 # FROM ubuntu:latest
 
@@ -30,3 +31,5 @@ CMD service postgresql start
 
 # RUN service postgresql start && \
 #     sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'hello1234';"
+
+#EXPOSE 5432
