@@ -1,4 +1,6 @@
 FROM jaimec21/node-psql:latest
+#EXPOSE 5432
+
 # FROM ubuntu:latest
 
 # SHELL [ "/bin/bash" , "-c" ]
