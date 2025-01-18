@@ -1,4 +1,6 @@
 FROM jaimec21/node-psql:latest
+
+CMD service postgresql start
 #EXPOSE 5432
 
 # FROM ubuntu:latest
