@@ -2,13 +2,11 @@ FROM jaimec21/node-psql:latest
 
 CMD service postgresql start
 
+WORKDIR /workspace
+
+COPY . .
+
 RUN npm install 
-
-# WORKDIR /workspace
-
-# COPY . .
-
-# RUN npm install 
 
 # WORKDIR /frontend
 
