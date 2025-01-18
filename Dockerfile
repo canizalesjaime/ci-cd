@@ -8,9 +8,10 @@ COPY . .
 
 RUN npm install 
 
-# WORKDIR /frontend
+WORKDIR /frontend
 
-# RUN npm install 
+RUN npm install 
+
 # FROM ubuntu:latest
 
 # SHELL [ "/bin/bash" , "-c" ]
