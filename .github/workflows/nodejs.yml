@@ -104,7 +104,7 @@ jobs:
       - name: Install backend dependencies
         run: |
           docker exec my-app-container pwd && ls
-          docker exec my-app-container npm ci
+          docker exec my-app-container npm install
 
       - name: Run DB migrations
         run: docker exec my-app-container node migrate.js
