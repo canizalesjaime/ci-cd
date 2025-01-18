@@ -47,7 +47,7 @@ jobs:
 
     - name: Run DB migrations (if any)
       run: |
-        npm run migrate.js  # Adjust this to your migration script if needed
+        node migrate.js  # Adjust this to your migration script if needed
 
     # - name: Run tests
     #   env:
