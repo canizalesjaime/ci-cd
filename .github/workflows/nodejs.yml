@@ -21,12 +21,6 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Wait for PostgreSQL to be ready
-      run: |
-        until pg_isready -h localhost -p 5432; do
-          echo "Waiting for PostgreSQL to be ready..."
-          sleep 2
-        done
 
     - name: Run DB migrations (if any)
       run: |
