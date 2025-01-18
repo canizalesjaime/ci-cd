@@ -44,7 +44,6 @@ jobs:
           echo "Waiting for PostgreSQL to be ready..."
           sleep 2
         done
-        service postgresql start
         sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'hello1234';"
 
     - name: Run DB migrations (if any)
