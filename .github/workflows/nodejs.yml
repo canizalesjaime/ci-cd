@@ -102,7 +102,7 @@ jobs:
           done
 
       - name: Install backend dependencies
-        run: docker exec my-app-container npm install
+        run: docker exec my-app-container npm ci
 
       - name: Run DB migrations
         run: docker exec my-app-container node migrate.js
