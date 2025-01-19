@@ -15,7 +15,7 @@ WORKDIR /workspace
 EXPOSE 3000 4000 5432
 
 #CMD service postgresql start
-#CMD ["/usr/lib/postgresql/12/bin/postgres", "-D", "/var/lib/postgresql/data"]
+CMD ["/usr/lib/postgresql/16/bin/postgres", "-D", "/var/lib/postgresql/data"]
 
 
 # FROM ubuntu:latest
