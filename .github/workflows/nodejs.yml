@@ -92,7 +92,9 @@ jobs:
             my-app
 
       - name: Start PostgreSQL manually
-        run: docker exec my-app-container service postgresql start
+        run: |
+          docker start my-app-container
+          docker exec my-app-container service postgresql start
 
       - name: Wait for PostgreSQL to be ready
         run: |
