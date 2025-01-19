@@ -47,7 +47,8 @@ jobs:
 
     - name: Run DB migrations (if any)
       run: |
-        node migrate.js  # Adjust this to your migration script if needed
+        node migrate.js
+        npm run dev
 
     # - name: Run tests
     #   env:
@@ -58,7 +59,7 @@ jobs:
       run: |
         cd frontend
         npm install
-        npm run build
+        npm start
 
 
 
