@@ -3,13 +3,9 @@ FROM jaimec21/node-psql:latest
 WORKDIR /workspace
 
 # COPY . .
-
 # RUN npm install 
-
 # WORKDIR frontend
-
 # RUN npm install 
-
 # WORKDIR /workspace
 
 EXPOSE 3000 4000 5432
@@ -17,9 +13,6 @@ EXPOSE 3000 4000 5432
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
 CMD ["/start.sh"]
-
-#CMD service postgresql start
-#CMD ["/usr/lib/postgresql/16/bin/postgres", "-D", "/var/lib/postgresql/data"]
 
 
 # FROM ubuntu:latest

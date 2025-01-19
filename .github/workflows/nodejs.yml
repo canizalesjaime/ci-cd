@@ -85,6 +85,9 @@ jobs:
         run: |
           docker run -d \
             --name my-app-container \
+            -e POSTGRES_USER=postgres \
+            -e POSTGRES_PASSWORD="hello1234" \
+            -e POSTGRES_DB=postgres \
             -p 5432:5432 \
             my-app
 
