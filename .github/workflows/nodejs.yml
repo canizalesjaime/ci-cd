@@ -107,6 +107,17 @@ jobs:
       - name: Run DB migrations
         run: docker exec my-app-container node migrate.js
 
-      # - name: Install frontend dependencies
-      #   run: docker exec my-app-container bash -c "cd frontend && npm install"
+      - name: Install frontend dependencies
+        run: docker exec my-app-container bash -c "cd frontend && npm install"
+
+      # deploy:
+      #   runs-on: ubuntu-latest
+      #   needs: build
+      #   steps:
+      #     - name: Deploy to Heroku
+      #       uses: akhileshns/heroku-deploy@v3.12.12
+      #       with:
+      #         heroku_api_key: 
+      #         heroku_app_name: "your-app-name"
+      #         heroku_email: "your-email@example.com"
 
