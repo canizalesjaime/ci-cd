@@ -101,10 +101,8 @@ jobs:
             sleep 2
           done
 
-      # - name: Install backend dependencies
-      #   run: |
-      #     docker exec my-app-container pwd && ls
-      #     docker exec my-app-container npm install
+      - name: Install backend dependencies
+        run: docker exec my-app-container pwd && ls && npm install
 
       # - name: Run DB migrations
       #   run: docker exec my-app-container node migrate.js
@@ -112,5 +110,3 @@ jobs:
       # - name: Install frontend dependencies
       #   run: docker exec my-app-container bash -c "cd frontend && npm install"
 
-      # - name: Build frontend
-      #   run: docker exec my-app-container bash -c "cd frontend && npm run build"

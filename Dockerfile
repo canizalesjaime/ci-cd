@@ -2,15 +2,15 @@ FROM jaimec21/node-psql:latest
 
 WORKDIR /workspace
 
-COPY . .
+# COPY . .
 
-RUN npm install 
+# RUN npm install 
 
-WORKDIR frontend
+# WORKDIR frontend
 
-RUN npm install 
+# RUN npm install 
 
-WORKDIR /workspace
+# WORKDIR /workspace
 
 EXPOSE 3000 4000 5432
 
