@@ -2,8 +2,9 @@
 * scheduler project(make psql remote(non-local) and connectr pgadmin) (week, calendar, todo)- converts week to pdf
 * react docker: npm create vite@latest my-react-app --template react
 * sde 2 has CI
-* Plan: Start github action, modify docker in yml, or add pw to container in yml?
+* Plan: deploy on heroku or aws ?
 * github action extension?
+
 
 
 # Steps to run project in devcontainers commands

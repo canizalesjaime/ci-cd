@@ -13,7 +13,7 @@
 
 #     services:
 #       postgres:
-#         image: postgres:13
+#         image: postgres:16
 #         env:
 #           POSTGRES_USER: postgres
 #           POSTGRES_PASSWORD: hello1234
@@ -97,7 +97,7 @@ jobs:
             echo "Waiting for PostgreSQL to be ready..."
             sleep 2
           done
-          docker exec my-app-container pwd && npm install && service postgresql start && chmod +x migrate.sh && ./migrate.sh
+          docker exec my-app-container pwd && npm install && pg_ctlcluster 16 main start && chmod +x migrate.sh && ./migrate.sh
 
       # - name: Install backend dependencies
       #   run: docker exec my-app-container pwd && ls && npm install
@@ -107,6 +107,8 @@ jobs:
 
       # - name: Install frontend dependencies
       #   run: docker exec my-app-container pwd && cd frontend && npm install
+
+
 
       # deploy:
       #   runs-on: ubuntu-latest
