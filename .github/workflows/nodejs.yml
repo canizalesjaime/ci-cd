@@ -97,7 +97,7 @@ jobs:
             echo "Waiting for PostgreSQL to be ready..."
             sleep 2
           done
-          docker exec my-app-container pwd && npm install && sudo pg_ctlcluster 16 main start && chmod +x migrate.sh && ./migrate.sh
+          docker exec my-app-container pwd && npm install && sudo service postgresql start && chmod +x migrate.sh && ./migrate.sh
 
       # - name: Install backend dependencies
       #   run: docker exec my-app-container pwd && ls && npm install
