@@ -105,7 +105,7 @@ jobs:
         run: docker exec my-app-container pwd && ls && node migrate.js
 
       - name: Install frontend dependencies
-        run: docker exec my-app-container bash -c "cd frontend && npm install"
+        run: docker exec my-app-container bash -c pwd && ls && cd frontend && npm install
 
       # deploy:
       #   runs-on: ubuntu-latest
