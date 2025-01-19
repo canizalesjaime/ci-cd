@@ -14,7 +14,9 @@ WORKDIR /workspace
 
 EXPOSE 3000 4000 5432
 
-CMD service postgresql start
+#CMD service postgresql start
+CMD ["postgres"]
+
 # FROM ubuntu:latest
 
 # SHELL [ "/bin/bash" , "-c" ]
