@@ -91,11 +91,6 @@ jobs:
             -p 5432:5432 \
             my-app
 
-      - name: Start PostgreSQL manually
-        run: |
-          docker start my-app-container
-          docker exec my-app-container service postgresql start
-
       - name: Wait for PostgreSQL to be ready
         run: |
           until docker exec my-app-container pg_isready -U postgres; do
