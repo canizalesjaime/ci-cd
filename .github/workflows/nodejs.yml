@@ -100,7 +100,7 @@ jobs:
             echo "Waiting for PostgreSQL to be ready..."
             sleep 2
           done
-          node migrate.js
+          npm install && node migrate.js
 
       - name: Install backend dependencies
         run: docker exec my-app-container pwd && ls && npm install
