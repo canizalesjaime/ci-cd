@@ -97,15 +97,16 @@ jobs:
             echo "Waiting for PostgreSQL to be ready..."
             sleep 2
           done
+          docker exec my-app-container pwd && npm install && node migrate.js
 
-      - name: Install backend dependencies
-        run: docker exec my-app-container pwd && ls && npm install
+      # - name: Install backend dependencies
+      #   run: docker exec my-app-container pwd && ls && npm install
 
-      - name: Run DB migrations
-        run: docker exec my-app-container pwd && node migrate.js
+      # - name: Run DB migrations
+      #   run: docker exec my-app-container pwd && node migrate.js
 
-      - name: Install frontend dependencies
-        run: docker exec my-app-container pwd && cd frontend && npm install
+      # - name: Install frontend dependencies
+      #   run: docker exec my-app-container pwd && cd frontend && npm install
 
       # deploy:
       #   runs-on: ubuntu-latest
