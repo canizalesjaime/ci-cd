@@ -86,7 +86,7 @@ jobs:
           docker run -d \
             --name my-app-container \
             -e POSTGRES_USER=postgres \
-            -e POSTGRES_PASSWORD="hello1234" \
+            -e POSTGRES_PASSWORD=hello1234 \
             -e POSTGRES_DB=postgres \
             -p 5432:5432 \
             my-app
@@ -97,7 +97,7 @@ jobs:
             echo "Waiting for PostgreSQL to be ready..."
             sleep 2
           done
-          docker exec my-app-container pwd && npm install && node migrate.js
+          docker exec my-app-container pwd && npm install && chmod +x migrate.sh && ./migrate.sh
 
       # - name: Install backend dependencies
       #   run: docker exec my-app-container pwd && ls && npm install
