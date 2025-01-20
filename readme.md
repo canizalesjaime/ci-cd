@@ -3,6 +3,8 @@
 * react docker: npm create vite@latest my-react-app --template react
 * sde 2 has CI
 * Plan: deploy on heroku, try authenication project instead
+* heroku addons:create heroku-postgresql:essential-0 --app your-heroku-app
+
 
 
 
