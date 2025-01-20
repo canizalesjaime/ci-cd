@@ -21,8 +21,13 @@ const pool = new Pool({
   port: 5432,
 });
 
-app.use(cors());
-//app.use(cors({ origin: 'https://app-frontend1-fdc38c7b3d87.herokuapp.com/' }));
+//app.use(cors());
+app.use(cors({
+  origin: 'https://app-frontend1-fdc38c7b3d87.herokuapp.com',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true
+}));
+
 
 // Helper function to execute queries
 const query = async (text, params) => {
