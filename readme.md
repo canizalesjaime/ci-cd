@@ -1,11 +1,17 @@
 # Continuous Integration and Continuous Deployment 1/21(12-2pm)
-* scheduler project(make psql remote(non-local) and connectr pgadmin) (week, calendar, todo)- converts week to pdf
-* react docker: npm create vite@latest my-react-app --template react
 * sde 2 has CI
-* Plan: deploy on heroku, try authenication project instead
-* heroku addons:create heroku-postgresql:essential-0 --app your-heroku-app
+* Plan: try authenication project, or use ejs instead of reacty to get rid of frontend server
 
 
+
+## shceduler project
+
+# technologies
+* react
+* postgressql
+* node js
+* ci/cd
+* heroku
 
 
 # Steps to run project in devcontainers commands

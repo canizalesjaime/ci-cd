@@ -5,10 +5,10 @@
 CI is the practice of frequently integrating small code changes into a shared repository. Each integration is automatically tested and verified to detect issues early.
 
 ### Key Features:
-* Automated Builds: Every code change triggers an automated build process.
-* Automated Testing: Unit, integration, and sometimes end-to-end tests run automatically.
-* Frequent Commits: Developers commit code changes regularly to the main branch.
-* Early Bug Detection: Problems are caught early, reducing integration issues.
+* **Automated Builds:** Every code change triggers an automated build process.
+* **Automated Testing:** Unit, integration, and sometimes end-to-end tests run automatically.
+* **Frequent Commits:** Developers commit code changes regularly to the main branch.
+* **Early Bug Detection:** Problems are caught early, reducing integration issues.
 
 ### Common CI Tools:
 * Jenkins
@@ -28,6 +28,7 @@ CD automates the release of validated code changes to production environments wi
 
 ### Common CD Tools:
 * Jenkins
+* GitHub Actions
 * AWS CodeDeploy
 * Azure DevOps
 * Argo CD
