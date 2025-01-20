@@ -113,5 +113,5 @@ By following these steps, you'll have your application set up and deployed on He
 
 ## Notes 
 * commands for testing local runs:
-* heroku config:set REACT_APP_API_URL=https://my-backend-app.herokuapp.com
+* heroku config:set REACT_APP_API_URL=https://app-backend1-2d99556f99a0.herokuapp.com/
 * heroku auth:token
