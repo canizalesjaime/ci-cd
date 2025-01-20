@@ -19,22 +19,22 @@ function App() {
   }, []);
 
   const fetchSchedule = async () => {
-    const response = await axios.get(`${API_URL}/api/schedule`);
+    const response = await axios.get(`${API_URL}api/schedule`);
     setSchedule(response.data);
   };
 
   const fetchTodos = async () => {
-    const response = await axios.get(`${API_URL}/api/todos`);
+    const response = await axios.get(`${API_URL}api/todos`);
     setTodos(response.data);
   };
 
   const addEvent = async () => {
-    await axios.post(`${API_URL}/api/schedule`, { event: newEvent });
+    await axios.post(`${API_URL}api/schedule`, { event: newEvent });
     fetchSchedule();
   };
 
   const addTask = async () => {
-    await axios.post(`${API_URL}/api/todos`, {
+    await axios.post(`${API_URL}api/todos`, {
       task: newTask,
       dueDate: newDueDate,
     });
@@ -42,7 +42,7 @@ function App() {
   };
 
   const deleteTask = async (task) => {
-    await axios.delete(`${API_URL}/api/todos/${task}`);
+    await axios.delete(`${API_URL}api/todos/${task}`);
     fetchTodos();
   };
 
