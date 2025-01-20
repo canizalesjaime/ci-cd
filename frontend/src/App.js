@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 
-const API_URL = "http://localhost:4000";
-
+//const API_URL = "http://localhost:4000";
+const API_URL = process.env.REACT_APP_API_URL;
 //console.log(`${API_URL}/api/schedule`)
 
 function App() {
