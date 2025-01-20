@@ -3,7 +3,6 @@
 * react docker: npm create vite@latest my-react-app --template react
 * sde 2 has CI
 * Plan: deploy on heroku
-* github action extension?
 
 
 
