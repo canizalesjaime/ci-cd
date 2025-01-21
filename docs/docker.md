@@ -1,15 +1,6 @@
-# Continuous Integration and Continuous Deployment 1/21(12-2pm)
-* sde 2 has CI
-
-
-
-## technologies
-* react
-* postgressql
-* node js
-* ci/cd
-* heroku
-
+# Steps for docker in general(applies to both below)
+* Modify the .env files(./ and ./frontend) for the local ports
+* Modify the ./.github.workflows/nodejs.yml for the docker version(included in the comments of the file)
 
 ## Steps to run project in devcontainers commands
 1. cd ```\workspace```

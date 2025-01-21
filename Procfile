@@ -1,2 +1,2 @@
-release: node migrate.js
+release: node clear_tables.js && node migrate.js
 web: npm run dev

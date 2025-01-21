@@ -23,6 +23,24 @@ After installing the CLI, verify the installation:
 heroku --version
 ```
 
+## Add procfile
+Instructions on Adding a Procfile for Heroku Deployment
+A Procfile is a special text file used by Heroku to define the commands needed to run your application. It specifies the type of process to run (e.g., web server, worker, etc.), ensuring Heroku knows how to start your app.
+
+### Steps to Add a Procfile:
+1. **Create a Procfile in the Root Directory**
+Navigate to the root directory of your project.
+Create a new file named Procfile (without any extension like .txt).
+2. **Define Your Process Type**
+The content of the Procfile depends on your application type.
+
+Examples:
+For a Node.js application (e.g., using Express.js):
+
+```plaintext
+web: node index.js
+```
+
 ## Log in to Heroku:
 To authenticate with Heroku, run the following command in your terminal:
 
