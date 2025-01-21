@@ -21,12 +21,20 @@ app.use(bodyParser.json());
 //   port: 5432,
 // });
 
+// const pool = new Pool({
+//   user: "u86lje1ko9120m",
+//   host: "cb5ajfjosdpmil.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com",
+//   database: "df96e8j5gtojgu",
+//   password: "p26a678d0165d28e0de810e5cec4e9cdfa53a6ddce84eb9926ae5b8771dd378a4",
+//   port: 5432,
+// });
+
+
 const pool = new Pool({
-  user: "u86lje1ko9120m",
-  host: "cb5ajfjosdpmil.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com",
-  database: "df96e8j5gtojgu",
-  password: "p26a678d0165d28e0de810e5cec4e9cdfa53a6ddce84eb9926ae5b8771dd378a4",
-  port: 5432,
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
 });
 
 //app.use(cors());
