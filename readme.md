@@ -1,12 +1,9 @@
 # Continuous Integration and Continuous Deployment 1/21(12-2pm)
 * sde 2 has CI
-* Plan: try authenication project, or use ejs instead of reacty to get rid of frontend server
 
 
 
-## shceduler project
-
-# technologies
+## technologies
 * react
 * postgressql
 * node js
@@ -14,7 +11,7 @@
 * heroku
 
 
-# Steps to run project in devcontainers commands
+## Steps to run project in devcontainers commands
 1. cd ```\workspace```
 2. ```pg_ctlcluster 16 main start```
 3. ```node migrate.js```
@@ -25,7 +22,7 @@
 7. open a web browser and go to http://localhost:3000
 
 
-# Steps to run project in terminal commands
+## Steps to run project in terminal commands
 1. ```docker build -t my-app .```
 2. ```docker run -p 3000:3000 -p 4000:4000 -p 5432:5432 --name test_container -it --rm my-app``` 
 3. ```pg_ctlcluster 16 main start```

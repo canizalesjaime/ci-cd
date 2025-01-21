@@ -48,7 +48,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Weekly Schedule</h1>
+      <h1>Weekly Schedule!</h1>
       <input
         type="text"
         value={newEvent}
