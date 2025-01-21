@@ -130,6 +130,6 @@ To automate deployments, you can set up Continuous Deployment (CD) with services
 By following these steps, you'll have your application set up and deployed on Heroku!
 
 ## Notes 
-* commands for testing local runs:
+* commands for testing local runs: check public repo
 * heroku config:set REACT_APP_API_URL=https://app-backend1-2d99556f99a0.herokuapp.com/
 * heroku auth:token
