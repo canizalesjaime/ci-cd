@@ -32,8 +32,8 @@ const pool = new Pool({
 //app.use(cors());
 app.use(cors({
   origin: 'https://app-frontend1-fdc38c7b3d87.herokuapp.com',
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 
